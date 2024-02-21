@@ -15,6 +15,38 @@ git merge __remote__
 merge from is above the line, merge to is below 
 uncommitted changes will be lost if you go to checkout another branch in the middle of editing
 
+Review setting up a continuous integration workflow
+How to operate github
+Follow good practices with Git / GitHub
+“Fork and Pull”
+	Fork does not keep the issues, need to go to original
+Start off with “Issues”
+
+F&P
+	Fork
+	Clone - Need it locally; clone the fork not the original
+	Create a feature branch
+	Start writing and making changes as the issue describes
+	Stage/commit just those files
+	Make a pull request based on those commits
+	Resolve conflicts, using good merge conflict practices
+	Git pull upstream main
+	Checkout feature branch
+	Merge main into it
+	Recommitting
+	After push, pull request will be automatically updated
+
+Test before committing
+Don’t commit binary or irrelevant files
+In commit message, add Resolve Issue #18375830958
+git status is helpful for finding place in workflow
+	Files that are staged to commit and such
+git branch will echo the current branch, and what other branches there are “here”
+	git remote -v will show all of the remotes along with their URLs
+		Useful for Permission Denied errors
+		git remote set url [upstream/origin] [URL]
+		git remote -u [upstream/origin] [URL]
+
 
 
 
