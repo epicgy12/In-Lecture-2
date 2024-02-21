@@ -1,0 +1,20 @@
+git log - prints the most recent few commits
+git status - identifies if things have been staged “this is marked to be committed”, or (highlighted in red) are files changed but not committed - will also give commands to help reverse adding erroneous files - very important
+git remote -v “make sure we have a mechanism to communicate with the remote repo”
+git remote set-url __name of remote__ __new url__
+git remote add __name of remote__ __url__
+“upstream” is the final landing place, basically the hub for the entire class, whereas Origin is our teams personal hub for our project alone - both are remote however
+git push -u __teams remote name__ __specific branch name__ (-u is only for when creating a new branch)
+git branch - will give list of local branches with a star and green on the current checked out branch
+When merge conflict - 
+git checkout main
+git pull or git pull __remote__ __branch__
+git checkout __local__
+git merge __remote__
+|| be sure to remove annotations that git adds when merge conflict arise ||
+merge from is above the line, merge to is below 
+uncommitted changes will be lost if you go to checkout another branch in the middle of editing
+
+
+
+
